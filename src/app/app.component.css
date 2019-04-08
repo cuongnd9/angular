@@ -1,5 +1,14 @@
 .container {
   text-align: center;
+  height: 100vh;
+}
+
+.light-theme {
+  background-color: white;
+}
+
+.dark-theme {
+  background-color: gray;
 }
 
 h1 {
@@ -16,6 +25,6 @@ button {
   border-radius: 5px;
   background-color: tomato;
   color: white;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-bottom: 50px;
 }
