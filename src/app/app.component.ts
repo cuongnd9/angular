@@ -3,17 +3,22 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <app-title></app-title>
-    <img alt='logo' [style.width.px]='imageWidth' src={{angularImg}} />
-    <img alt='logo' [style.width.px]='imageWidth' [src]='reactImg' />
-    <img alt='logo' [style.width.px]='imageWidth' [src]='vueImg' />
+    <div class='container'>
+      <app-title></app-title>
+      <div><button (click)='onToggle()'>Toggle Image</button></div>
+      <img [hidden]='isHiddenImage' alt='logo' [style.width.px]='imageWidth' src={{reactImg}} />
+    </div>
   `,
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  angularImg = 'https://cdn.freebiesupply.com/logos/large/2x/angular-icon-1-logo-svg-vector.svg';
+  isHiddenImage = true;
+
   reactImg = 'https://cdn.freebiesupply.com/logos/large/2x/react-logo-png-transparent.png';
-  vueImg = 'https://vuejs.org/images/logo.png';
 
   imageWidth = 200;
+
+  onToggle() {
+    this.isHiddenImage = !this.isHiddenImage;
+  }
 }

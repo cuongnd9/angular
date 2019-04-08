@@ -1,3 +1,10 @@
 .with-underline {
   text-decoration: underline;
 }
+
+h1 {
+  color: lightblue;
+  font-family: 'Dank Mono', 'Courier New', Courier, monospace;
+  font-weight: 300;
+  margin: 50px;
+}

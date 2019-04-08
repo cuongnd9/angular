@@ -9,6 +9,5 @@ import { Component } from '@angular/core';
 })
 export class TitleComponent {
   withUnderline = true;
-  color = 'tomato';
   fontWeight = 'lighter';
 }
