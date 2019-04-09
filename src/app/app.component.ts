@@ -18,6 +18,7 @@ import { Component } from '@angular/core';
         [style.width.px]="imageWidth"
         src="{{ reactImg }}"
       />
+      <app-footer></app-footer>
     </div>
   `,
   styleUrls: ['./app.component.css']
