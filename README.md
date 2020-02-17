@@ -1,4 +1,4 @@
-# Angular Starter
+# angular
 
 > 💪 Getting Started with Angular.
 
